@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui-css@2.2.12/semantic.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <title>Image To Text (Tesseract JS)</title>
+</head>
+
+<body>
+
+
+  <div class="container-ui">  
+    <p>Image to Text</p>
+    <p class="sub">Insert the image file & extract the text</p>
+  
+
+   
+      
+   
+    <div class="ui card">
+
+      <div class="inputContent">
+        <label class="dateLabel-1" for="date-1"> Input </label>
+        <img id="image" class="ui centered medium image" src="http://www.brainstormerbingo.com/Images/upload-empty.png"/>
+          
+
+        <div class="content extra">
+          <input id="file" type="file" onchange="proccess(window.lastFile=this.files[0])">  
+        </div>
+      </div>
+    </div>
+        
+
+
+      
+    <div class="ui card">
+
+      <div class="outputContent">
+        <label class="dateLabel-2" for="date-2"> Output </label>
+      </div>
+
+
+         
+      <div class='row result'>
+        <div class="column placeholder">No Output 
+          <br/>
+          <br/>
+          <span>Choose a file to start</span>    
+        </div>
+      </div>
+
+    </div>  
+  </div>
+          
+          
+          
+
+
+
+  <!-- https://github.com/naptha/tesseract.js#tesseractjs -->
+  <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/semantic-ui-css@2.2.12/semantic.min.js'></script>
+  <script  src="./script.js"></script>
+</body>
+</html>
